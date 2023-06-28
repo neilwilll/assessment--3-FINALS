@@ -6,12 +6,12 @@ body {
   margin: 2rem auto;
   font-family: "Open Sans", sans-serif;
 }
-<link rel ="stylesheet" type="text/css" href="styles.css">
+
 .my-button {
     font-size: 20px;
     background-color: yellow;
     color: black;
-
+}
 nav {
 	border-bottom: 2px solid orange;
 }
@@ -39,5 +39,19 @@ input {
 }
 
 img {
-	max-width: 300px;
+	max-width: 500px;
+}
+.profile-button {
+  background-color: yellow;
+  color: black;
+  font-size: 1.5rem;
+  padding: 50px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.profile-button:hover {
+  background-color: orange;
+  cursor: pointer;
 }

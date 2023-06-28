@@ -3,7 +3,6 @@
 <head>
 	<title>Homepage</title>
 	<link rel="stylesheet" type="text/css" href="styles.css"> 
-
 </head>
 <body>
 	<nav>
@@ -18,22 +17,28 @@
 		<h1>Welcome to this little website.</h1>
 		<p>hello world</p>
 		<p>welcome to the website</p>
-
-		<img src="https://media.istockphoto.com/id/185590965/photo/yellow-rubber-duck-for-bath-time.jpg?s=1024x1024&w=is&k=20&c=N5IJ7arJnSEOf430_MsdzUYG0KKehUiHYeOA1YAu-NQ="
+		<div id="Duck">
+			<img src="https://media.istockphoto.com/id/185590965/photo/yellow-rubber-duck-for-bath-time.jpg?s=1024x1024&w=is&k=20&c=N5IJ7arJnSEOf430_MsdzUYG0KKehUiHYeOA1YAu-NQ=" alt="Rubber Duck Image">
+		</div>
 
 		<ul>you look great</ul>
-		
 
 		<h2>Contact Us</h2>
-		<ul>thank you</ul>
-		<ul>you are nice</ul>
-		<ul>thank</ul>
+		<ul>
+			<li>thank you</li>
+			<li>you are nice</li>
+			<li>thank</li>
+		</ul>
+
 		<label for="how-heard">How did you hear about us?</label>
-<div>
-  <input type="checkbox" id="google" name="howHeard" value="Google">
-  <label for="google">Google</label>
+		<input type="checkbox" id="google" name="howHeard" value="Google">
+		<label for="other">Google</label>	
+		<input type="checkbox" id="friend" name="howHeard" value="Friend">
+		<label for="friend">A Friend</label>
+		<input type="checkbox" id="other" name="howHeard" value="Other">
+		<label for="other">Other</label>
+
 		<form id="contact">
-	
 			Your name:
 			<input type="text">
 
@@ -41,14 +46,18 @@
 			<input type="textarea">
 
 			<input type="submit">
-
-
 		</form>
-
 	</content>
 
-
 	<script src="about.js"></script>
-
+	<script>
+		const Duck = document.getElementById('Duck');
+	
+		function handleMouseover() {
+			alert('You look great today!');
+		}
+	
+		Duck.addEventListener('mouseover', handleMouseover);
+	</script>
 </body>
 </html>
